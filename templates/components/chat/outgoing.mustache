@@ -1,0 +1,15 @@
+<div class="outgoing_msg">
+    <div class="sent_msg">
+        <p class="d-flex flex-column">
+            {{#quote_message}}
+                <span class="received_withd_msg_quote m-2 ml-2 py-2 pl-2 border-secondary">{{message}}</span>
+            {{/quote_message}}
+            {{message}}
+        </p>
+        <div class="time_date d-flex align-items-center justify-content-between flex-wrap">
+            <span>{{date}}</span>
+
+            <span role="button" class="add-quote" data-quote-id="{{uid_message}}">Ответить</span>
+        </div>
+    </div>
+</div>
